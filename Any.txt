@@ -1,0 +1,6 @@
+
+
+git init
+git status
+git clone repositoryLink   shift+insert -> For paste
+                  
