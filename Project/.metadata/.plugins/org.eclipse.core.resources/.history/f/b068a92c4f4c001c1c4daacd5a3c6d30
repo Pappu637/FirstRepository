@@ -1,0 +1,42 @@
+package Academy;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+//import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+
+import pageObjects.LandingPage;
+import pageObjects.LoginPage;
+import resources.Base;
+
+public class ValidateNavigationBar extends Base{
+
+	//@SuppressWarnings("deprecation")
+	@Test
+	public void basepageNavigation() throws IOException, InterruptedException
+	{
+		driver = initializeDriver();
+		System.out.println(prop.getProperty("url"));
+		driver.get("https://qaclickacademy.com");
+		System.out.println(prop.getProperty("url"));
+		Thread.sleep(5000);
+		//driver.get(prop.getProperty("url"));
+		Thread.sleep(5000);
+		LandingPage l= new LandingPage(driver);
+		//l.getLogin().click();
+		Thread.sleep(5000);
+		//l.getTitle();
+		System.out.println(l.getTitle().getText());
+		//Assert.assertEquals(l.getTitle().getText(),"Featured Courses");
+		//Assert.assertEquals(l.getTitle().getText(), "Featured Courses");
+		Assert.assertTrue(l.getNavigationBar().isDisplayed());
+		
+		
+	}
+	
+	
+	
+}

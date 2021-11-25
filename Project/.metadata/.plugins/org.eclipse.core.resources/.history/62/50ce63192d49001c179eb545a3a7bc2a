@@ -1,0 +1,17 @@
+package facebook;
+
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+public class fbLoginTest extends TestBaseTest {
+	
+	@Test
+	public void init()
+	{
+		FbLoginPage loginPage = PageFactory.initElements(driver, FbLoginPage.class);
+		loginPage.setEmail("");
+		loginPage.setPassword("");
+		loginPage.clickOnLoginButton();
+	}
+
+}

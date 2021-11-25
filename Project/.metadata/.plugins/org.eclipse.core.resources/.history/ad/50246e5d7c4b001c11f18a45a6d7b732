@@ -1,0 +1,11 @@
+package Package1;
+
+import org.openqa.selenium.support.PageFactory;
+
+public class SauceLabsLoginTest extends BaseTest{
+
+	
+	
+	SauceLabsLoginPage firstLoginPage = PageFactory.initElements(driver, SauceLabsLoginPage.class);
+	firstLoginPage.clickOnLogIn();
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Loan]">
+  <listeners>
+    <listener class-name="test.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Personal Loan(failed)" preserve-order="true">
+    <classes>
+      <class name="test.Day4">
+        <methods>
+          <include name="BfrSuite"/>
+        </methods>
+      </class> <!-- test.Day4 -->
+      <class name="test.Day1">
+        <methods>
+          <include name="Demo"/>
+          <include name="AftTest"/>
+          <include name="BefrTest"/>
+        </methods>
+      </class> <!-- test.Day1 -->
+      <class name="test.Day2">
+        <methods>
+          <include name="aftMethod"/>
+          <include name="bfrMethod"/>
+        </methods>
+      </class> <!-- test.Day2 -->
+    </classes>
+  </test> <!-- Personal Loan(failed) -->
+</suite> <!-- Failed suite [Loan] -->

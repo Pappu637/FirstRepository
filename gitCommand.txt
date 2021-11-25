@@ -16,5 +16,5 @@ git config user.email "emaiId"
 git push origin main
 
 
-git checkout -b branchname
+git checkout -b branchname   ->to change branch name 
                   

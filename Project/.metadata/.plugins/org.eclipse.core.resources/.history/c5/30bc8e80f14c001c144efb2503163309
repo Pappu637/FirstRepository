@@ -1,0 +1,24 @@
+package Academy;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class AfterSignInPage {
+			
+	WebDriver driver;
+	public AfterSignInPage(WebDriver driver) {
+		this.driver=driver;
+	}
+	
+	
+	//By account = By.xpath("//div[text()='Account']");
+	By account = By.xpath("//div[@id='app']//following::div[text()='Account']");
+	
+	public WebElement getAccount() {
+		return driver.findElement(account);
+	}
+	public void getHello() {
+		System.out.println("Hello.........");
+	}
+}

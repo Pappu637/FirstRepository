@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-16T11:33:45Z" name="Loan" finished-at="2021-11-16T11:33:46Z" duration-ms="68">
+    <groups>
+      <group name="smoke">
+        <method signature="Day2.p2loan()[pri:0, instance:test.Day2@3646a422]" name="p2loan" class="test.Day2"/>
+        <method signature="Day4.MobLoginHomeLoan()[pri:0, instance:test.Day4@41a0aa7d]" name="MobLoginHomeLoan" class="test.Day4"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2021-11-16T11:33:45Z" name="Personal Loan" finished-at="2021-11-16T11:33:45Z" duration-ms="22">
+      <class name="test.Day1">
+        <test-method is-config="true" signature="BefrTest()[pri:0, instance:test.Day1@5ab956d7]" started-at="2021-11-16T17:03:45Z" name="BefrTest" finished-at="2021-11-16T17:03:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BefrTest -->
+        <test-method signature="Demo()[pri:0, instance:test.Day1@5ab956d7]" started-at="2021-11-16T17:03:45Z" name="Demo" finished-at="2021-11-16T17:03:45Z" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at test.Day1.Demo(Day1.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo -->
+        <test-method signature="Demo2()[pri:0, instance:test.Day1@5ab956d7]" started-at="2021-11-16T17:03:45Z" name="Demo2" finished-at="2021-11-16T17:03:45Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo2 -->
+        <test-method is-config="true" signature="AftTest()[pri:0, instance:test.Day1@5ab956d7]" started-at="2021-11-16T17:03:45Z" name="AftTest" finished-at="2021-11-16T17:03:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AftTest -->
+      </class> <!-- test.Day1 -->
+      <class name="test.Day2">
+        <test-method is-config="true" signature="bfrMethod()[pri:0, instance:test.Day2@3646a422]" started-at="2021-11-16T17:03:45Z" name="bfrMethod" finished-at="2021-11-16T17:03:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfrMethod -->
+        <test-method signature="p2loan()[pri:0, instance:test.Day2@3646a422]" started-at="2021-11-16T17:03:45Z" name="p2loan" finished-at="2021-11-16T17:03:45Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- p2loan -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:test.Day2@3646a422]" started-at="2021-11-16T17:03:45Z" name="aftMethod" finished-at="2021-11-16T17:03:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="bfrMethod()[pri:0, instance:test.Day2@3646a422]" started-at="2021-11-16T17:03:45Z" name="bfrMethod" finished-at="2021-11-16T17:03:45Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfrMethod -->
+        <test-method signature="ploan()[pri:0, instance:test.Day2@3646a422]" started-at="2021-11-16T17:03:45Z" name="ploan" finished-at="2021-11-16T17:03:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ploan -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:test.Day2@3646a422]" started-at="2021-11-16T17:03:45Z" name="aftMethod" finished-at="2021-11-16T17:03:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+      </class> <!-- test.Day2 -->
+      <class name="test.Day4">
+        <test-method signature="MobLoginHomeLoan()[pri:0, instance:test.Day4@41a0aa7d]" started-at="2021-11-16T17:03:45Z" name="MobLoginHomeLoan" finished-at="2021-11-16T17:03:45Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobLoginHomeLoan -->
+        <test-method signature="WebLoginHomeLoan()[pri:0, instance:test.Day4@41a0aa7d]" started-at="2021-11-16T17:03:45Z" name="WebLoginHomeLoan" finished-at="2021-11-16T17:03:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginHomeLoan -->
+      </class> <!-- test.Day4 -->
+    </test> <!-- Personal Loan -->
+    <test started-at="2021-11-16T11:33:46Z" name="Car Loan" finished-at="2021-11-16T11:33:46Z" duration-ms="2">
+      <class name="test.Day3">
+        <test-method signature="WebLoginCarLoan()[pri:0, instance:test.Day3@248e319b]" started-at="2021-11-16T17:03:46Z" name="WebLoginCarLoan" finished-at="2021-11-16T17:03:46Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCarLoan -->
+      </class> <!-- test.Day3 -->
+      <class name="test.Day4">
+        <test-method is-config="true" signature="BfrSuite()[pri:0, instance:test.Day4@41a0aa7d]" started-at="2021-11-16T17:03:45Z" name="BfrSuite" finished-at="2021-11-16T17:03:45Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BfrSuite -->
+      </class> <!-- test.Day4 -->
+    </test> <!-- Car Loan -->
+  </suite> <!-- Loan -->
+</testng-results>
