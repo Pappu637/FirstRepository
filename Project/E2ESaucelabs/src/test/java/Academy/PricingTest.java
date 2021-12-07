@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import resources.Base;
 
 public class PricingTest extends Base{
-	
+	public WebDriver driver;
 	@BeforeTest
 	public void initiallize() throws IOException
 	{
@@ -37,7 +37,8 @@ public class PricingTest extends Base{
 		Assert.assertEquals(p.getPricingTitle().getText(), "PRICING PLANS");
 		p.getScrollDown();
 		Thread.sleep(5000);
-		p.getStarted().click();
+		//p.getStarted().click();
+		p.getAllPlans("Virtual Cloud");
 		
 
 	
@@ -46,7 +47,7 @@ public class PricingTest extends Base{
 	
 
 
-	@AfterTest
+	//@AfterTest
 	public void teardown()
 	{
 		driver.close();

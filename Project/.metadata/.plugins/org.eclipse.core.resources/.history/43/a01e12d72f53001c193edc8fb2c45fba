@@ -1,0 +1,43 @@
+package Academy;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+public class CompanyPage {
+
+	public WebDriver driver;
+	public CompanyPage(WebDriver driver) {
+		
+		this.driver=driver;
+	}
+	
+
+	
+	
+	By offices= By.xpath("//select[contains(@id,'offices-select')]");
+	By fullstackEngineer= By.xpath("(//h2[text()='Development']/..//a)[4]");
+	
+	
+	
+	public void getScrollDown()
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,500)", "");
+	}
+	
+	
+	public Select selectOffices() {
+		
+		Select objSelect =new Select(driver.findElement(offices));
+		return objSelect;
+		//objSelect.selectByIndex(5);
+	}
+	public WebElement getFullstackEngineer() {
+		return driver.findElement(fullstackEngineer);
+	}
+
+	
+}

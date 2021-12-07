@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import resources.Base;
 
 public class TryItFreeTest extends Base{
-	
+	public WebDriver driver;
 	@BeforeTest
 	public void initiallize() throws IOException
 	{

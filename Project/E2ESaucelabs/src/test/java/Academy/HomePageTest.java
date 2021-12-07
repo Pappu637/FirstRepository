@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import resources.Base;
 
 public class HomePageTest extends Base{
-	
+	public WebDriver driver;
 	@BeforeTest
 	public void initiallize() throws IOException
 	{
@@ -37,11 +37,20 @@ public class HomePageTest extends Base{
 		sp.getPassword().sendKeys("Test@12345");
 		sp.getLogIn().click();
 		Thread.sleep(5000);
-		//AfterSignInPage asp =  AfterSignInPage(driver);
+		//AfterSignInPage asp =  AfterSignInPage(driver); 
 		AfterSignInPage asp = new AfterSignInPage(driver);
 		//asp.getHello();
-		Thread.sleep(5000);
+		
 		asp.getAccount().click();
+		//asp.getLogOut().click();
+		Thread.sleep(5000);
+		asp.getSauceApps().click();
+		asp.getVisual().click();
+		Thread.sleep(5000);
+		asp.switchToChildWindow();
+		Thread.sleep(5000);
+		asp.getRequestDemo().click();
+		
 		//asp.getDesktopMobile().click();
 
 	
